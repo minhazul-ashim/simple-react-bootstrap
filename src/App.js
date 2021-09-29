@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Foods from './components/Foods/Foods';
 import Clients from './components/Clients/Clients';
+import FoodDetail from './components/FoodDetail/FoodDetail';
 
 
 
@@ -21,6 +22,9 @@ function App() {
           </Route>
           <Route path='/foods'>
             <Foods></Foods>
+          </Route>
+          <Route path='/food/:foodId'>
+            <FoodDetail></FoodDetail>
           </Route>
           <Route path='/clients'>
             <Clients></Clients>

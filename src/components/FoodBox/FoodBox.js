@@ -1,10 +1,18 @@
 import './FoodBox.css'
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
+import { useHistory } from 'react-router';
 
 const FoodBox = (props) => {
 
-    const { strMeal, strMealThumb, strCategory } = props.data;
+    const { idMeal, strMeal, strMealThumb, strCategory } = props.data;
+
+    let history = useHistory();
+
+    const handleDetail = () => {
+
+        history.push(`./food/${idMeal}`)
+    }
 
     return (
         <Col>
@@ -17,7 +25,7 @@ const FoodBox = (props) => {
                     </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                    <button className='btn btn-info'>Details</button>
+                    <button onClick={handleDetail} className='btn btn-info'>Details</button>
                 </Card.Footer>
             </Card>
         </Col>
