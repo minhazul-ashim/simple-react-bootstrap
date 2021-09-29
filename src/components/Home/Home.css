@@ -1,0 +1,33 @@
+.home-container {
+
+    background: url(../../images/banner.jpg);
+}
+
+.home-overlay {
+
+    background: rgba(0, 0, 0, 0.644);
+}
+
+.celebration {
+
+    font-weight: 700;
+    background: linear-gradient(to right, #f0a320, #45fa78);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.celebration-image {
+
+    background: url(../../images/book-us.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+    height: 30vh;
+}
+
+.celebration-text {
+
+    background: rgba(0, 0, 0, 0.658);
+    height: 100%;
+    width: 100%;
+}
