@@ -24,8 +24,8 @@ const FoodDetail = () => {
         <div className="d-flex justify-content-center my-5">
             <Card className='w-50'>
                 <Card.Body>
-                    <Card.Title className='text-center'>{detail.strMeal}</Card.Title>
-                    <Card.Img className='img-fluid' variant="top" src={detail.strMealThumb} />
+                    <Card.Title className='text-center text-danger'>{detail.strMeal}</Card.Title>
+                    <Card.Img className='img-fluid mb-3' variant="top" src={detail.strMealThumb} />
                     <Card.Text>{detail.strInstructions?.slice(0, 300)}
                     </Card.Text>
                 </Card.Body>
