@@ -11,6 +11,11 @@ const Home = () => {
         history.push('/featured')
     }
 
+    const handleBooking = () => {
+
+        history.push('/booking')
+    }
+
     return (
         <>
             <div className="home-container">
@@ -26,7 +31,7 @@ const Home = () => {
             <div className="celebration-image">
                 <div className="celebration-text d-flex flex-column align-items-center">
                     <h3 className='p-5 text-light text-center'>Book your program now!</h3>
-                    <button className='btn btn-outline-danger'>Book now</button>
+                    <button onClick={handleBooking} className='btn btn-outline-danger'>Book now</button>
                 </div>
             </div>
         </>

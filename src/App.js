@@ -9,6 +9,7 @@ import FoodDetail from './components/FoodDetail/FoodDetail';
 import ClientDetai from './components/ClientDetail/ClientDetai';
 import Footer from './components/Footer/Footer';
 import Featured from './components/Featured/Featured';
+import BookingForm from './components/BookingForm/BookingForm';
 
 
 
@@ -28,6 +29,9 @@ function App() {
           </Route>
           <Route exact path='/featured'>
             <Featured></Featured>
+          </Route>
+          <Route exact path='/booking'>
+            <BookingForm></BookingForm>
           </Route>
           <Route path='/foods'>
             <Foods></Foods>
