@@ -20,7 +20,7 @@ const Featured = () => {
         <div className='container d-flex flex-column align-items-center'>
             <h2 className='text-center text-danger my-4'>Today's Featured</h2>
 
-            <Card className='w-75 mb-4'>
+            <Card className='w-50 mb-4'>
                 <Card.Img className='img-fluid' variant="top" src={featured.strMealThumb} />
                 <Card.Body>
                     <Card.Title>{featured.strMeal}</Card.Title>

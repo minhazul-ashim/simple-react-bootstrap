@@ -1,6 +1,7 @@
 .form-bg {
 
     background: url(../../images/banner2.jpg);
+    height: 100vh;
 }
 
 .form-bg-overlay {
