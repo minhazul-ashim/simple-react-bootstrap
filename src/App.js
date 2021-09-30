@@ -7,6 +7,7 @@ import Foods from './components/Foods/Foods';
 import Clients from './components/Clients/Clients';
 import FoodDetail from './components/FoodDetail/FoodDetail';
 import ClientDetai from './components/ClientDetail/ClientDetai';
+import Footer from './components/Footer/Footer';
 
 
 
@@ -19,6 +20,9 @@ function App() {
         <Navigation></Navigation>
         <Switch>
           <Route path='/home'>
+            <Home></Home>
+          </Route>
+          <Route exact path='/'>
             <Home></Home>
           </Route>
           <Route path='/foods'>
@@ -35,6 +39,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
+      <Footer></Footer>
     </div>
   );
 }
