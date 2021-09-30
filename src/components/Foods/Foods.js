@@ -23,7 +23,11 @@ const Foods = () => {
 
         fetch(searchURL)
             .then(res => res.json())
-            .then(data => setFood(data.meals))
+            .then(data => {
+                if (data.meals) {
+                    setFood(data.meals)
+                }
+            })
 
     }, [search])
 

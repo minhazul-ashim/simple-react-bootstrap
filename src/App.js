@@ -6,7 +6,7 @@ import Home from './components/Home/Home';
 import Foods from './components/Foods/Foods';
 import Clients from './components/Clients/Clients';
 import FoodDetail from './components/FoodDetail/FoodDetail';
-import ClientBox from './components/ClientBox/ClientBox';
+import ClientDetai from './components/ClientDetail/ClientDetai';
 
 
 
@@ -31,7 +31,7 @@ function App() {
             <Clients></Clients>
           </Route>
           <Route path='/user/:id'>
-            <ClientBox></ClientBox>
+            <ClientDetai></ClientDetai>
           </Route>
         </Switch>
       </Router>
