@@ -1,7 +1,16 @@
 import './Home.css'
 import React from 'react';
+import { useHistory } from 'react-router';
 
 const Home = () => {
+
+    let history = useHistory();
+
+    const handleFeature = () => {
+
+        history.push('/featured')
+    }
+
     return (
         <>
             <div className="home-container">
@@ -10,7 +19,7 @@ const Home = () => {
                     <p className='text-light text-center lead'>
                         The only one who cares genuinely for satisfying your cravings.
                     </p>
-                    <button className='btn btn-outline-danger btn-sm'>Check Featured</button>
+                    <button onClick={handleFeature} className='btn btn-outline-danger btn-sm'>Check Featured</button>
                 </div>
             </div>
             <h2 className='celebration text-center my-3'>Have a celebration?</h2>

@@ -8,6 +8,7 @@ import Clients from './components/Clients/Clients';
 import FoodDetail from './components/FoodDetail/FoodDetail';
 import ClientDetai from './components/ClientDetail/ClientDetai';
 import Footer from './components/Footer/Footer';
+import Featured from './components/Featured/Featured';
 
 
 
@@ -24,6 +25,9 @@ function App() {
           </Route>
           <Route exact path='/'>
             <Home></Home>
+          </Route>
+          <Route exact path='/featured'>
+            <Featured></Featured>
           </Route>
           <Route path='/foods'>
             <Foods></Foods>
